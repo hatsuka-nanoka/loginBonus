@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>ログインボーナス</title>
+
+
+	<link href="content/lobinBonus.css" rel="stylesheet" type="text/css">
+	<script src="content/urlList.js"></script>
+	<script src="content/loginBonus.js"></script>
+
+</head>
+
+<body onload="startUp();">
+
+	<h1 class="heading1">
+		ログインボーナスを受け取ろう
+	</h1>
+
+	<table border="0" id="dayTable">
+		<tr>
+			<td>今日の日付</td>
+			<td>最終ログイン日</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="today"></div>
+			</td>
+			<td>
+				<div id="lastLoginDay"></div>
+			</td>
+		</tr>
+	</table>
+
+	<input type="button" class="Blue_3dButton" value="開く" onclick="urlOpenButton();">
+	<p class="tyuui">
+		※新たにリンクを追加するときは urlList.js に追加してください<br>
+		※複数登録しているのに1つしか開かれない場合はこのサイトのポップアップブロックを解除するか以下のリンクから開いてください
+	</p>
+
+	<div id="linkList"></div>
+
+</body>
+
+</html>
