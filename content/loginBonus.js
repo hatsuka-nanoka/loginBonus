@@ -38,7 +38,7 @@ var chkLogin = function () {
 
 	// tmpDayに入った更新日と現在時刻を比較し更新日のほうが先の場合windowを閉じる
 	if (today < tmpDay) {
-		// window.close();
+		window.close();
 		// console.log('window close')
 	}
 }
